@@ -1,5 +1,3 @@
-# Single-Cell Transcriptomic Analysis of YAP1 and WWTR1 (TAZ) in Normal Tissue
-
 Abstract
 This repository contains a Python-based computational pipeline for processing and analyzing single-cell RNA sequencing (scRNA-seq) data. The primary objective is to evaluate the expression of key mechanotransduction effectors—YAP1 and WWTR1 (TAZ)—across distinct cell populations within normal breast tissue. By leveraging 10x Genomics data, this workflow categorizes cells into YAP-only, TAZ-only, and double-positive phenotypes, providing a quantitative foundation for understanding mechanosignaling heterogeneity.
 
@@ -23,22 +21,3 @@ The workflow is divided into four primary modules, designed to be executed seque
 4. Data Visualization (`07_boxplot` & `08_finalplot`)**
    * Generates grouped bar charts with asymmetric error bars to represent mean expression distributions.
    * Produces high-resolution, outlier-filtered box plots using `seaborn` and `matplotlib` to visualize population-level variance.
-
-Repository Structure
-
-```text
-├── scripts/
-│   ├── convert_all_to_h5ad.py   # Bulk .h5 to .h5ad conversion
-│   ├── batches.py               # Memory-safe batch merging
-│   ├── analysis_all.py          # Primary expression extraction logic
-│   ├── merge_all_files.py       # Dataframe consolidation for plotting
-│   ├── wallis.py                # Comprehensive statistical testing suite
-│   ├── finalplot.py             # Bar chart generation
-│   └── boxplot.py               # Distribution visualization
-├── results/
-│   ├── all_excel_files/         # Cell-type specific raw expression data
-│   ├── marker_mean_std_expression.csv
-│   ├── statistical_results_with_posthoc.txt
-│   ├── expression_plot_with_error_bars_corrected.png
-│   └── normal_tissue_boxplot.png
-└── README.md
