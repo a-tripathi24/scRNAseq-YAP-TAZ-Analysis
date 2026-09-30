@@ -1,4 +1,5 @@
 Abstract
+
 This repository contains a Python-based computational pipeline for processing and analyzing single-cell RNA sequencing (scRNA-seq) data. The primary objective is to evaluate the expression of key mechanotransduction effectors—YAP1 and WWTR1 (TAZ)—across distinct cell populations within normal breast tissue. By leveraging 10x Genomics data, this workflow categorizes cells into YAP-only, TAZ-only, and double-positive phenotypes, providing a quantitative foundation for understanding mechanosignaling heterogeneity.
 
  Pipeline Architecture
